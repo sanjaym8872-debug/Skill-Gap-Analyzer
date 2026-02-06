@@ -1,0 +1,124 @@
+Skill Gap Analysis Platform
+
+Build a full-stack web application called Skill Gap Analysis Platform.
+
+Purpose
+
+The platform helps students, freshers, and job seekers identify their current skills, compare them with required skills for a target job role, and receive a personalized learning roadmap to bridge the skill gap.
+
+Tech Stack
+
+Frontend: React (functional components, hooks, responsive UI)
+
+Backend: Node.js with Express
+
+Authentication: Session-based authentication using express-session
+
+Database: SQLite
+
+Deployment Ready: Vercel (frontend) and Render (backend)
+
+Core Features
+1. User Authentication
+
+User registration with username, email, and password
+
+Secure login using session-based authentication
+
+Logout functionality
+
+Protected routes (only logged-in users can access dashboard)
+
+2. User Profile
+
+Profile page to store:
+
+Personal details
+
+Existing skills (with proficiency level: beginner/intermediate/advanced)
+
+Data saved in SQLite database
+
+3. Job Role Selection
+
+Dropdown list of predefined job roles (e.g., Frontend Developer, Backend Developer, Data Analyst)
+
+Each job role has a predefined required skill set stored in the database
+
+4. Skill Gap Analysis
+
+Compare user skills with selected job role skills
+
+Identify:
+
+Missing skills
+
+Weak skills
+
+Display results clearly using lists or progress indicators
+
+5. Personalized Learning Roadmap
+
+Generate a step-by-step learning roadmap based on missing skills
+
+Show recommended learning order
+
+Simple, beginner-friendly guidance (no external APIs required)
+
+6. Dashboard
+
+Centralized dashboard showing:
+
+User profile
+
+Selected job role
+
+Skill gap results
+
+Learning roadmap
+
+Previous analyses (history)
+
+7. Data Persistence
+
+All user data preserved after logout
+
+User can log in later and continue from where they left off
+
+Backend Requirements
+
+RESTful API using Express
+
+SQLite tables for:
+
+Users
+
+Skills
+
+Job roles
+
+Skill mappings
+
+Proper error handling and validation
+
+Frontend Requirements
+
+React components for:
+
+Login/Register
+
+Profile
+
+Job Role Selection
+
+Skill Gap Results
+
+Roadmap
+
+Dashboard
+
+Clean UI with basic styling (CSS or simple UI library)
+
+Output
+
+Generate complete frontend and backend code with clear folder structure and comments so it can be easily understood for academic/project submission.
