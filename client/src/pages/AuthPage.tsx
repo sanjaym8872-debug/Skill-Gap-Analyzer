@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "@/hooks/use-auth";
 import { useLocation } from "wouter";
 import { z } from "zod";
@@ -28,11 +28,6 @@ export default function AuthPage() {
   const [, setLocation] = useLocation();
   const [activeTab, setActiveTab] = useState("login");
 
-  if (user) {
-    setLocation("/");
-    return null;
-  }
-
   // Login Form
   const loginForm = useForm<z.infer<typeof loginSchema>>({
     resolver: zodResolver(loginSchema),
@@ -51,6 +46,16 @@ export default function AuthPage() {
       bio: "" 
     },
   });
+
+  useEffect(() => {
+    if (user) {
+      setLocation("/");
+    }
+  }, [user, setLocation]);
+
+  if (user) {
+    return null;
+  }
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-background p-4 relative overflow-hidden">
