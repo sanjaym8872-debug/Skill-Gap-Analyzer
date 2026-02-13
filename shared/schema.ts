@@ -120,6 +120,7 @@ export type UserSkill = typeof userSkills.$inferSelect;
 export type Analysis = typeof analyses.$inferSelect;
 
 // Derived types for frontend display
+
 export type JobRoleWithSkills = JobRole & {
   skills: (JobRoleSkill & { skill: Skill })[];
 };
