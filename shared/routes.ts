@@ -13,6 +13,7 @@ import {
 // ============================================
 // SHARED ERROR SCHEMAS
 // ============================================
+
 export const errorSchemas = {
   validation: z.object({
     message: z.string(),
