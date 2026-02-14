@@ -142,9 +142,3 @@ Below is a concise explanation of the top-level files and important folders in t
   - `schema.ts` — Drizzle DB schema + Zod insert/update types (single source of truth for DB shapes).
 
 ---
-
-If you'd like, I can also:
-1. Add a `docker-compose.yml` for Postgres and an env example. 
-2. Create a short `CONTRIBUTING.md` or `docs/` landing page that explains local dev flow.
-
-Tell me which of the two you'd like next.👍
